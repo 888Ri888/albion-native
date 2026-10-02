@@ -1,16 +1,24 @@
 # Albion Native
 
-Albion Native is my engine for Albion. One runtime, written in Rust and Bevy. Fable 2 GOTY is the first world. Later games are content on that same runtime, not separate ports glued together after the fact.
+Albion Native is my engine for Albion. One runtime, written in Rust and Bevy. Fable 2 GOTY is the first world, and it is the world that forces the engine to be real. Later games are content packs on that runtime.
 
-This repository is the production book. It is private until the studio head publishes it. It holds the design, the status, the seats, and the briefs. It does not hold game files, dump paths, or private notes.
+This repository is the production book. It is private until the studio head publishes it. The running code still lives in the private working tree until a slice is ported here. Game files never live in either repository.
 
 Studio head: [jxnplays](https://github.com/jxnplays)
 
+## Point a model at the job
+
+1. This repository, starting at [docs/RUN.md](docs/RUN.md).
+2. A Fable 2 GOTY tree the operator owns, as `FABLE2_DUMP`.
+3. An assignment: department, builder, review, brief.
+
+The model then takes the first open brief. It does not invent a second engine, and it does not jump to Fable 3.
+
 ## What this is
 
-A clean-room game engine, run like a production. Departments are in [STUDIO.md](STUDIO.md). The brain and the hive are in [docs/BRAIN.md](docs/BRAIN.md). Model seats are suggestions in [docs/SEATS.md](docs/SEATS.md). The studio head assigns them. A model does not choose its own department.
+A clean-room game engine, run like a production. Departments are in [STUDIO.md](STUDIO.md). The brain and the hive are in [docs/BRAIN.md](docs/BRAIN.md). Seats are in [docs/SEATS.md](docs/SEATS.md). The 1:1 map is [docs/GOTY.md](docs/GOTY.md). The later-world contract is [docs/ENGINE.md](docs/ENGINE.md).
 
-The player points the runtime at a Fable 2 GOTY install they already own. The engine reads that install and builds Albion in Bevy. The original executable is a reference for behavior. It is not the program being shipped.
+The original executable is a reference for behavior. It is not the program being shipped.
 
 ## What this is not
 
@@ -33,18 +41,13 @@ Honest snapshot, 2 October 2026. Detail in [STATUS.md](STATUS.md).
 | Bloodstone | Level data parses. It is not a rendered town yet. |
 | Playable runtime | A native window, a menu, and a greybox player. |
 | Quests, jobs, morality, DLC | Not started. |
-| Fable 3, Fable TLC, Fable Legends | Named in the vision. Not this milestone. |
+| Fable 3, Fable TLC, Fable Legends | Named. Blocked on the Fable 2 spine. |
 
 ## Read next
 
 1. [REVIEW.md](REVIEW.md) before this repository is made public.
-2. [VISION.md](VISION.md) for the end state.
-3. [STUDIO.md](STUDIO.md) for departments and who decides.
-4. [docs/SEATS.md](docs/SEATS.md) before assigning a model.
-5. [docs/BACKLOG.md](docs/BACKLOG.md) for the briefs.
-6. [ROADMAP.md](ROADMAP.md) for the order of work.
-7. [LEGAL.md](LEGAL.md) before you touch a dump.
-
-## Help without guessing
-
-Briefs are in [docs/BACKLOG.md](docs/BACKLOG.md). A pass does not start until the issue, or the brief, names the department, the builder, and a different model as review. Game files stay on the machine that owns the dump.
+2. [docs/RUN.md](docs/RUN.md) to start a model.
+3. [docs/GOTY.md](docs/GOTY.md) for the 1:1 map.
+4. [docs/ENGINE.md](docs/ENGINE.md) for later worlds.
+5. [STUDIO.md](STUDIO.md) and [docs/SEATS.md](docs/SEATS.md) before assigning a model.
+6. [LEGAL.md](LEGAL.md) before anyone touches a dump.
