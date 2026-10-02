@@ -1,18 +1,7 @@
 # Asset manager
 
-The studio head has a separate asset manager. It is not in this repository yet. It is a required seat on the engine, not a side toy.
+The viewer is `jxnplays/asset-bench`. It is its own repo. This engine embeds it. It does not grow a second browser.
 
-When it is added, it is the only tool that browses a local owned install. The game crates do not grow their own browsers.
+Fable is the first client: Fable, TLC, Anniversary, Fable 2, Fable 3, Legends. The same bench later opens other installs you own, including the old Modern Warfare tree and Skate. The working copy today is `fable2rustybev` `tools` at `6802309`. `fable2-bnk-extractor` is empty.
 
-## Job
-
-- Point at `FABLE2_DUMP`, and later at one variable per world.
-- List archives, models, textures, levels, clips, scripts, and audio without copying them into git.
-- Hand a chosen record to the converter.
-- Stay useful to other projects. The manager is not Fable-only. Fable is the first client.
-
-## Not yet
-
-No path, no binary, and no claim that the manager already drives the Bevy scene. A pull request that vendors the tool says so in the title and strips machine paths.
-
-Until that pull request, decoders in the working tree are the browser.
+An agent drives the viewer. A prompt is a command: three dogs, three colors, a building mashed from parts you own. The engine is not built. The bench is the part that exists. No install is copied into git.
