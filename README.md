@@ -5,36 +5,30 @@
 <p align="center">
   <a href="https://www.rust-lang.org"><img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&amp;logo=rust&amp;logoColor=white" alt="Rust"></a>
   <img src="https://img.shields.io/badge/Bevy-runtime-c4a574?style=for-the-badge" alt="Bevy">
-  <img src="https://img.shields.io/badge/ports-five%20games%2C%20one%20engine-6b2d3c?style=for-the-badge" alt="Five games, one engine">
+  <img src="https://img.shields.io/badge/work-ports%20%7C%20engine%20%7C%20tools-6b2d3c?style=for-the-badge" alt="Ports, engine, tools">
 </p>
 
-Albion Native is the engine. Fable, The Lost Chapters, Anniversary, Fable 2, Fable 3, and Legends are each a standalone Rust and Bevy port, then a world on this runtime. One loader. User meshes, names, companions, and mounts drop in beside the originals. The disc stays on the machine that owns it.
+Three doors. Ports, the engine, and the tools. You and other people work one door at a time. Studio head: [jxnplays](https://github.com/jxnplays).
 
-Fable 2 is the only port with code. The rest are named so the layout does not get reinvented. Studio head: [jxnplays](https://github.com/jxnplays).
+| Door | You get | Work here |
+|---|---|---|
+| Ports | Each Fable as a Rust and Bevy game. | `fable2rustybev` is the only tree with code. |
+| Engine | One runtime that loads those ports and mixes assets you own. | This repo. Slices move here after a shot. |
+| Tools | Rename an NPC, drop a Blender GLB, drive the window, browse a dump. | Contracts in `docs/NPCS.md`, `docs/MODS.md`, `docs/RUNTIME.md`. Not built. |
+
+Map: [docs/WORK.md](docs/WORK.md).
 
 ## Paste this
 
 ```text
-You are on Albion Native. Read https://github.com/jxnplays/albion-native in this order: README.md, docs/SHARE.md, docs/ISSUES.md, docs/OPERATOR.md, docs/HARDWARE.md, SECURITY.md, docs/PUBLISH.md.
+You are on Albion Native. Read https://github.com/jxnplays/albion-native then docs/WORK.md, docs/ISSUES.md, docs/OPERATOR.md, docs/HARDWARE.md, SECURITY.md, docs/PUBLISH.md.
 
-The end state is one engine and a port of each Fable. The job today is not that. The code is jxnplays/fable2rustybev if you were given access. Do not open any other repo. Do not search the disk for a dump. If FABLE2_DUMP is unset, stop and write BLOCKED.
+Pick one door. Ports, engine, or tools. Do not open all three.
 
-Build as is: cargo test --workspace, then cargo run -p fable2_game. Stay under 90% of this PC's RAM and VRAM.
+If the door is ports: code is jxnplays/fable2rustybev if you were given access. Do not open any other repo. If FABLE2_DUMP is unset, stop and write BLOCKED. cargo test --workspace, then cargo run -p fable2_game. Stay under 90% RAM and VRAM. Job is I-01 through I-04: one mesh, one texture, Bloodstone ground, one shot.
 
-Your job is I-01 through I-04: mount the dump, put one converted mesh in the window, put one texture on it, draw Bloodstone ground, and save a shot. Do not start combat, a quest, a custom mesh, or a second engine.
-
-A different model reviews the diff. If the shot is real and no game file is in it, publish in this same session. Studio session: push. Anyone else: open a pull request. Do not sit on a working fix. Do not push to jxnplays unless this session belongs to the studio head.
+A different model reviews the diff. If it works, publish in this session. Studio session: push. Anyone else: pull request. Do not sit on a working fix. Do not push to jxnplays unless this session belongs to the studio head.
 ```
-
-## End state
-
-| World | Role | Now |
-|---|---|---|
-| Fable 2 GOTY | First port. Builds the engine. | Code exists. Street does not. |
-| Fable 3 | Second port, then a pack. | Opens when Fable 2 is 1:1. |
-| Fable, TLC, Anniversary | Earlier games. Anniversary is presentation on TLC. | Not opened. |
-| Fable Legends | Last. Legal source only. | Not opened. |
-| User meshes | Companions, mounts, mobs, props. | Contract only. `docs/MODS.md` |
 
 ## Sunday
 
@@ -53,10 +47,6 @@ A different model reviews the diff. If the shot is real and no game file is in i
 | Models convert | `███████░░░` 70% |
 | Textures convert | `██░░░░░░░░` 20% |
 | Bloodstone parsed, not drawn | `███░░░░░░░` 35% |
-| Clips decoded, not playing | `████░░░░░░` 40% |
-| Dump hooked up | `█░░░░░░░░░` 10% |
-| NPC names and user meshes | `░░░░░░░░░░` 0% |
 | Fable 2 1:1 | `█░░░░░░░░░` 6% |
-| Second world on the engine | `░░░░░░░░░░` 0% |
-
-Rules: [docs/BOARD.md](docs/BOARD.md), [docs/LINEUP.md](docs/LINEUP.md), [docs/PUBLISH.md](docs/PUBLISH.md).
+| Engine holds a second world | `░░░░░░░░░░` 0% |
+| Tools | `░░░░░░░░░░` 0% |
