@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280">
-  <rect width="1200" height="280" fill="#14110e"/>
-  <rect x="0" y="0" width="8" height="280" fill="#c4a574"/>
-  <text x="48" y="118" fill="#f3ead7" font-family="Georgia, serif" font-size="64">Albion Native</text>
-  <text x="50" y="168" fill="#c4a574" font-family="Georgia, serif" font-size="22">A Rust and Bevy engine for Albion. Fable 2 GOTY is the first world.</text>
-  <text x="50" y="214" fill="#8a8175" font-family="Georgia, serif" font-size="18">Sunday bar: one mesh, one texture, Bloodstone ground. Not a 1:1.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <rect width="1200" height="300" fill="#14110e"/>
+  <rect x="0" y="0" width="8" height="300" fill="#c4a574"/>
+  <text x="48" y="108" fill="#f3ead7" font-family="Georgia, serif" font-size="64">Albion Native</text>
+  <text x="50" y="158" fill="#c4a574" font-family="Georgia, serif" font-size="22">One Rust and Bevy engine. Every Fable as its own port, then as a world on this runtime.</text>
+  <text x="50" y="198" fill="#8a8175" font-family="Georgia, serif" font-size="18">Assets you own stay on your machine. The engine is what mixes them.</text>
+  <text x="50" y="238" fill="#8a8175" font-family="Georgia, serif" font-size="18">Now: Fable 2. Sunday bar is one mesh, one texture, Bloodstone ground.</text>
 </svg>
