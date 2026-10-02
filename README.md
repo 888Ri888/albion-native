@@ -8,11 +8,23 @@
   <img src="https://img.shields.io/badge/first%20world-Fable%202%20GOTY-6b2d3c?style=for-the-badge" alt="Fable 2 GOTY">
 </p>
 
-Albion Native is the master engine. Each Fable is also its own port. Fable 2 is the only one with code. Studio head: [jxnplays](https://github.com/jxnplays).
+Albion Native is the master engine. Fable 2 is the only port with code. Studio head: [jxnplays](https://github.com/jxnplays). Official game art is not in this repo.
 
-The mark is ours. Official game art is not in this repo. A dump you own supplies the frames.
+## Paste this
 
-Sent here for the job? Read [docs/SHARE.md](docs/SHARE.md). Then [docs/ISSUES.md](docs/ISSUES.md). Fork. Do not push to this account. [SECURITY.md](SECURITY.md).
+Paste this to a model. Do not edit it.
+
+```text
+You are on Albion Native. Read https://github.com/jxnplays/albion-native in this order: README.md, docs/SHARE.md, docs/ISSUES.md, docs/OPERATOR.md, SECURITY.md, docs/PUBLISH.md.
+
+The code is jxnplays/fable2rustybev if you were given access. Do not open any other repo. Do not search the disk for a dump. If FABLE2_DUMP is unset, stop and write BLOCKED.
+
+Build as is: cargo test --workspace, then cargo run -p fable2_game. Stay under 90% of this PC's RAM and VRAM.
+
+Your job is I-01 through I-04: mount the dump, put one converted mesh in the window, put one texture on it, draw Bloodstone ground, and save a shot. Do not start combat, a quest, or a second engine.
+
+A different model reviews the diff. If the shot is real and no game file is in it, publish in this same session. Studio session: push. Anyone else: open a pull request. Do not sit on a working fix. Do not push to jxnplays unless this session belongs to the studio head.
+```
 
 ## Sunday
 
@@ -23,11 +35,7 @@ Sent here for the job? Read [docs/SHARE.md](docs/SHARE.md). Then [docs/ISSUES.md
 | Bloodstone ground under the body | `░░░░░░░░░░` |
 | A shot of those three | `░░░░░░░░░░` |
 
-That shot is the ask. A 1:1 is not.
-
 ## Board
-
-Agents update the row they moved. [docs/BOARD.md](docs/BOARD.md). Snapshot 2 October 2026.
 
 | Chunk | Bar |
 |---|---|
@@ -40,19 +48,4 @@ Agents update the row they moved. [docs/BOARD.md](docs/BOARD.md). Snapshot 2 Oct
 | Fable 2 1:1 | `█░░░░░░░░░` 6% |
 | Fable 3 and the rest | `░░░░░░░░░░` 0% |
 
-## Repos
-
-| Repo | Role |
-|---|---|
-| `albion-native` | Master. You are here. |
-| `fable2rustybev` | Fable 2 port. Only tree with code. |
-| `fable1rustybev` | Fable, TLC, Anniversary. Not opened. |
-| `fable3rustybev` | Opens when Fable 2 is 1:1. |
-| `fablelegendsrustybev` | Last. Legal source only. |
-
-## Start
-
-1. [docs/OPERATOR.md](docs/OPERATOR.md)
-2. [docs/ROSTER.md](docs/ROSTER.md)
-3. [docs/RUNTIME.md](docs/RUNTIME.md) to drive the executable
-4. [docs/REMOTE.md](docs/REMOTE.md) and [docs/HARDWARE.md](docs/HARDWARE.md) before a long run
+Rule: [docs/BOARD.md](docs/BOARD.md). Publish rule: [docs/PUBLISH.md](docs/PUBLISH.md).
