@@ -2,7 +2,7 @@
 
 Albion Native is my engine for Albion. One runtime, written in Rust and Bevy. Fable 2 GOTY is the first world. Later games are content on that same runtime, not separate ports glued together after the fact.
 
-This repository is the public production. It holds the design, the status, the seats, and the work others can pick up. It does not hold game files, dump paths, or private notes.
+This repository is the production book. It is private until the studio head publishes it. It holds the design, the status, the seats, and the briefs. It does not hold game files, dump paths, or private notes.
 
 Studio head: [jxnplays](https://github.com/jxnplays)
 
@@ -37,13 +37,14 @@ Honest snapshot, 2 October 2026. Detail in [STATUS.md](STATUS.md).
 
 ## Read next
 
-1. [VISION.md](VISION.md) for the end state.
-2. [STUDIO.md](STUDIO.md) for departments and who decides.
-3. [docs/SEATS.md](docs/SEATS.md) before assigning a model.
-4. [ROADMAP.md](ROADMAP.md) for the order of work.
-5. [CONTRIBUTING.md](CONTRIBUTING.md) if you want to build a piece.
-6. [LEGAL.md](LEGAL.md) before you touch a dump.
+1. [REVIEW.md](REVIEW.md) before this repository is made public.
+2. [VISION.md](VISION.md) for the end state.
+3. [STUDIO.md](STUDIO.md) for departments and who decides.
+4. [docs/SEATS.md](docs/SEATS.md) before assigning a model.
+5. [docs/BACKLOG.md](docs/BACKLOG.md) for the briefs.
+6. [ROADMAP.md](ROADMAP.md) for the order of work.
+7. [LEGAL.md](LEGAL.md) before you touch a dump.
 
 ## Help without guessing
 
-Open issues are the briefs. Take one, name your seat, open a pull request against that issue, and keep game files on your machine. The first useful delivery is a converted model standing in a Bevy scene, loaded from a local dump path the repo never sees.
+Briefs are in [docs/BACKLOG.md](docs/BACKLOG.md). A pass does not start until the issue, or the brief, names the department, the builder, and a different model as review. Game files stay on the machine that owns the dump.
