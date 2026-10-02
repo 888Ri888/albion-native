@@ -1,16 +1,30 @@
 # Albion Native
 
-Albion Native is my engine for Albion. One runtime, written in Rust and Bevy. Fable 2 GOTY is the first rewrite and the thing that makes the engine real. Fable 3 starts when that rewrite is 1:1. The other Fable games join as world packs.
+Master engine for Albion. Rust and Bevy. The standalone ports stay their own games. This repo is where they join.
 
-This repository is the production book. It is private until the studio head publishes it. Running code stays in the private working tree until a slice is ported here. Game files never live in git.
+Fable 2 GOTY is the current port. Fable 3 starts when that port is 1:1. Fable, The Lost Chapters, Anniversary, and Legends come after, each as its own repo and then as a pack here.
+
+This book is private until the studio head publishes it. Game files never live in git.
 
 Studio head: [jxnplays](https://github.com/jxnplays)
+
+## Repos
+
+| Repo | Role |
+|---|---|
+| `albion-native` | Master. You are here. |
+| `fable2rustybev` | Standalone Fable 2. Focus. |
+| `fable1rustybev` | Standalone Fable, TLC, and Anniversary. Not opened. |
+| `fable3rustybev` | Standalone Fable 3. Opens when Fable 2 is 1:1. |
+| `fablelegendsrustybev` | Standalone Legends. Last. |
+
+Map: [docs/REPOS.md](docs/REPOS.md).
 
 ## Board
 
 This table is the status. Agents update it in the same pull request that moves a chunk. The rule is [docs/BOARD.md](docs/BOARD.md). A change with no board edit is rejected.
 
-Snapshot 2 October 2026. A row moves only when a pull request proves it. Sorted by what blocks a playable Fable 2, then the engine.
+Snapshot 2 October 2026. Sorted by what blocks a playable Fable 2, then the engine.
 
 | # | Chunk | % | Why it is this number |
 |---|---|---|---|
@@ -35,38 +49,18 @@ Snapshot 2 October 2026. A row moves only when a pull request proves it. Sorted 
 
 Sunday bar is rows 2, 4, and 3 in one shot. Not row 15.
 
-## Lineup
-
-| Order | World |
-|---|---|
-| Now | Fable 2 GOTY, including Knothole Island and See the Future |
-| When Fable 2 is 1:1 | Fable 3, then its packs |
-| After Fable 3 is playable | Fable, The Lost Chapters, Anniversary as presentation on TLC |
-| Last, legal source only | Fable Legends |
-
-Detail is in [docs/LINEUP.md](docs/LINEUP.md).
-
 ## Point a model at the job
 
-1. [docs/RUN.md](docs/RUN.md)
-2. A dump you own, as `FABLE2_DUMP`
-3. One chunk from [docs/SYSTEMS.md](docs/SYSTEMS.md) or one card from [docs/LORE.md](docs/LORE.md)
-4. Chunk, department, builder, review
-5. Update this board if the chunk moved. [docs/BOARD.md](docs/BOARD.md).
+1. This repo is the master. Fable 2 work happens in `fable2rustybev` until a slice is ported here.
+2. [docs/RUN.md](docs/RUN.md)
+3. A dump you own, as `FABLE2_DUMP`
+4. One chunk. Update this board if it moved.
 
 The first street is reserved. Outside models take a card. Contract: [docs/CONTRACT.md](docs/CONTRACT.md).
 
-## What this is not
-
-- Not a decompilation of an executable.
-- Not an emulator.
-- Not a strategy guide.
-- Not a claim that any Fable already runs 1:1.
-
 ## Read next
 
-1. [REVIEW.md](REVIEW.md) before this is public.
-2. [docs/BOARD.md](docs/BOARD.md) before editing the table.
-3. [docs/RUN.md](docs/RUN.md) to start a model.
-4. [docs/SYSTEMS.md](docs/SYSTEMS.md) and [docs/LORE.md](docs/LORE.md) to take a chunk.
-5. [LEGAL.md](LEGAL.md) before anyone touches a dump.
+1. [docs/REPOS.md](docs/REPOS.md)
+2. [docs/BOARD.md](docs/BOARD.md)
+3. [docs/RUN.md](docs/RUN.md)
+4. [LEGAL.md](LEGAL.md)
