@@ -1,0 +1,46 @@
+# Ideas
+
+One line each. A line is a plan, not a claim that it runs.
+
+- Clean-room Rust and Bevy rewrite of Fable 2 GOTY, not a decompilation of the executable.
+- One Albion engine, with each game as a world pack on that runtime.
+- Fable 2 GOTY is the first rewrite and the thing that builds the engine.
+- Fable 3 rewrite starts the day Fable 2 is 1:1.
+- Fable, The Lost Chapters, and Anniversary join after Fable 3 is playable.
+- Anniversary is TLC content with later presentation, not a new story.
+- Fable Legends is last, and only from a legal source.
+- Knothole Island and See the Future are Fable 2 content, not a second engine.
+- Traitor's Keep and Understone are Fable 3 content.
+- Decoders, converter, and asset manager stay useful to other projects.
+- Asset manager is a required tool, not in this repo until the studio head adds it.
+- Player points the runtime at a GOTY install they own, via `FABLE2_DUMP`.
+- Original executable stays an oracle.
+- No game files, dump paths, or legal names in git.
+- Public book stays private until the studio head publishes it.
+- Studio head assigns the model seats. A model does not pick its job.
+- Builder and review are different models.
+- Short prompt calls one tool, then a frame comes back.
+- Agent can list the region, remake a derived asset, spawn it, move it, edit a path, and return a shot.
+- Agent seat is over the owned dump and the generated directory, not machine root.
+- Derived files are not committed or published.
+- First proof is one remade model standing in the Bevy window.
+- Bloodstone heightfield is the first street, because its data already parses.
+- Then one prop, then one exit, then the other regions.
+- Idle, walk, and run from decoded clips.
+- Curve-mode animation fixed or explicitly rejected.
+- Greybox body replaced by a game mesh.
+- Dog follows, stays, points, then grows.
+- Lock-on, one melee, then a spell slot, then a ranged weapon.
+- One Lua-backed quest runs before the rest of the catalog.
+- Every named quest has a card: Fable 2, Fable, TLC, Fable 3, Legends.
+- Jobs, stalls, and rent are their own chunks after a street exists.
+- Morality and expressions move only from a cited act.
+- HUD orbs and a minimap stub.
+- One audio cue from a local bank, bank stays local.
+- One save slot round-trip, then save on quit.
+- Co-op is a henchman in the host world, not a second campaign.
+- Family and sanctuary follow the scripts, they are not invented.
+- Gargoyles, demon doors, and keys are content cards, not a separate engine.
+- Two models can take two chunks if they do not edit the same lines.
+- A pull request title is the chunk id.
+- A fork is not a second studio.
