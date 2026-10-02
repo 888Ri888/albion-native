@@ -22,39 +22,107 @@ Map: [docs/REPOS.md](docs/REPOS.md).
 
 ## Board
 
-This table is the status. Agents update it in the same pull request that moves a chunk. The rule is [docs/BOARD.md](docs/BOARD.md). A change with no board edit is rejected.
+This is the status. Agents update the row they moved, in the same pull request. Rule: [docs/BOARD.md](docs/BOARD.md). A change with no board edit is rejected.
 
-Snapshot 2 October 2026. Sorted by what blocks a playable Fable 2, then the engine.
+Snapshot 2 October 2026. Sorted inside each section by what blocks the next shot.
 
-| # | Chunk | % | Why it is this number |
+### Boot
+
+| # | Chunk | % | Why |
 |---|---|---|---|
-| 1 | Owned dump hooked up | 10 | Variable is named. Working tree still says the dump is not mounted. |
-| 2 | First street on screen | 0 | No mesh, texture, and ground in one shot. |
-| 3 | Level draw | 15 | Bloodstone parses, about 19,000 props. Nothing is drawn. |
-| 4 | Texture on a mesh | 8 | About 100 of 1,339 textures convert. None applied in a scene. |
-| 5 | Model conversion | 70 | 941 of 986 models become GLB. Foliage is open. Not in the window. |
-| 6 | Native window and body | 25 | Window, menu, and a greybox player. Not a Fable body. |
-| 7 | Animation on that body | 20 | 4,082 clips decoded. Curve mode is wrong. Not playing. |
-| 8 | First quest | 5 | Scripts extracted. None run. Cards are indexed only. |
-| 9 | Combat | 0 | Not in the running game. |
-| 10 | Dog | 0 | Follow is a plan, not a system. |
-| 11 | Jobs, morality, HUD, audio, save | 5 | Specs and parked prototypes. Not the build. |
-| 12 | Live agent tools | 5 | Seat is written. No `remake` or `shot` call exists. |
-| 13 | Mod support | 5 | Dump stays local. No pack loader yet. |
-| 14 | Asset manager | 0 | Required. Not in this repo. |
-| 15 | Fable 2 GOTY 1:1 | 6 | Formats exist. Regions, quests, and packs do not run. |
-| 16 | Engine holds a second world | 0 | Blocked on row 15. |
-| 17 | Fable 3 | 0 | Starts the day row 15 is real. |
-| 18 | Fable, TLC, Anniversary, Legends | 0 | Named. Not scheduled. |
+| 1 | `FABLE2_DUMP` set and listing `default.xex` | 10 | Name exists. Working tree says the dump is not mounted. |
+| 2 | Archive index from that dump | 40 | BNK reads have happened. Not a clean boot test in this book. |
+| 3 | Window titled Albion Native | 60 | A native window has opened. Not tied to a dump. |
 
-Sunday bar is rows 2, 4, and 3 in one shot. Not row 15.
+### First street
+
+| # | Chunk | % | Why |
+|---|---|---|---|
+| 4 | One GLB in the Bevy scene | 0 | Converter output is not in the window. |
+| 5 | One texture on that mesh | 0 | No applied texture. |
+| 6 | Bloodstone heightfield under the body | 0 | Files parse. Ground is not drawn. |
+| 7 | One prop from the placement table | 0 | 19,463 instances parsed. None placed. |
+| 8 | Collision on that ground | 0 | Greybox move exists. Not on the heightfield. |
+| 9 | Shot of mesh, texture, and ground | 0 | Sunday bar. |
+
+### Formats
+
+| # | Chunk | % | Why |
+|---|---|---|---|
+| 10 | Model decoder | 70 | 941 of 986 convert. Foliage open. |
+| 11 | Foliage sub-format | 0 | Trees and grass do not convert. |
+| 12 | Texture decoder | 20 | Headers decode. About 100 of 1,339 convert. |
+| 13 | Level records | 35 | Bloodstone scenario and heightfield files parse. |
+| 14 | Animation clips | 40 | 4,082 clips mapped. Curve mode still wrong. |
+| 15 | Lua bytecode | 30 | 1,378 scripts extracted. None run. |
+| 16 | Audio banks | 25 | 47,071 cues extracted. None play. |
+
+### Hero and town
+
+| # | Chunk | % | Why |
+|---|---|---|---|
+| 17 | Greybox body | 40 | Moves. Not a Fable mesh. |
+| 18 | Idle, walk, run clips on that body | 0 | Samples exist. Not playing. |
+| 19 | Game mesh replaces greybox | 0 | Not started. |
+| 20 | Dog follow and stay | 0 | Plan only. |
+| 21 | Dog point and grow | 0 | Plan only. |
+| 22 | Lock-on | 0 | Not in the build. |
+| 23 | One melee | 0 | Not in the build. |
+| 24 | One spell | 0 | Not in the build. |
+| 25 | One ranged weapon | 0 | Not in the build. |
+| 26 | First quest starts and completes | 0 | Cards indexed. No script host in the running game. |
+| 27 | Rest of the Fable 2 quest cards | 5 | Names listed. None evidenced. |
+| 28 | One job | 0 | Blocked on a street. |
+| 29 | Stall buy and sell | 0 | Not started. |
+| 30 | Rent tick | 0 | Not started. |
+| 31 | Two expression channels | 0 | Not started. |
+| 32 | Morality moves from a cited act | 0 | Not started. |
+| 33 | Health and will orbs | 5 | Spec only. |
+| 34 | Minimap stub | 0 | Not in the build. |
+| 35 | One audio cue | 0 | Banks extracted. No playback. |
+| 36 | One save slot | 0 | Not in the build. |
+
+### Regions
+
+| # | Chunk | % | Why |
+|---|---|---|---|
+| 37 | Bloodstone street | 15 | Data only. |
+| 38 | Bowerstone Market | 0 | Not drawn. |
+| 39 | Old Town | 0 | Childhood start. Not drawn. |
+| 40 | Bower Lake and the road | 0 | Not drawn. |
+| 41 | Oakfield | 0 | Not drawn. |
+| 42 | Westcliff | 0 | Not drawn. |
+| 43 | Wraithmarsh | 0 | Not drawn. |
+| 44 | Knothole Island | 0 | Pack. Not scheduled. |
+| 45 | See the Future | 0 | Pack. Not scheduled. |
+
+### Tools, mods, engine
+
+| # | Chunk | % | Why |
+|---|---|---|---|
+| 46 | `list_region` | 0 | Named. Not a call. |
+| 47 | `remake` one record | 0 | Named. Not a call. |
+| 48 | `spawn_prop` and `shot` | 0 | Named. Not a call. |
+| 49 | Path edit | 0 | Named. Not a call. |
+| 50 | Asset manager hooked up | 0 | Tool exists outside this repo. Not added. |
+| 51 | Pack loader | 0 | No second world can mount. |
+| 52 | Mod drop-in that does not commit a dump | 5 | Legal rule exists. No loader. |
+| 53 | Fable 2 GOTY 1:1 | 6 | Formats only. |
+| 54 | Master loads Fable 2 as a pack | 0 | Blocked on 53. |
+| 55 | `fable3rustybev` opened | 0 | Starts when 53 is real. |
+| 56 | Fable 3 1:1 | 0 | Not started. |
+| 57 | `fable1rustybev` opened | 0 | After Fable 3 is playable. |
+| 58 | Anniversary presentation on TLC | 0 | Not started. |
+| 59 | `fablelegendsrustybev` | 0 | Last. Legal source only. |
+
+Sunday bar is rows 4, 5, 6, and 9. Not row 53.
 
 ## Point a model at the job
 
 1. This repo is the master. Fable 2 work happens in `fable2rustybev` until a slice is ported here.
 2. [docs/RUN.md](docs/RUN.md)
 3. A dump you own, as `FABLE2_DUMP`
-4. One chunk. Update this board if it moved.
+4. One row. Update this board if it moved.
 
 The first street is reserved. Outside models take a card. Contract: [docs/CONTRACT.md](docs/CONTRACT.md).
 
