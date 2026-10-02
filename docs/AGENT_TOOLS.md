@@ -1,25 +1,33 @@
 # Agent tools
 
-The interaction to match is a short prompt that calls tools, changes the world, and shows the result. The reference is a San Andreas demo: a model builds a mesh, explores a map, and edits path nodes, three prompts at most. Those GTA tools are not this project. The loop is.
+The player can hand a live model a seat in the running project. That seat can list, convert, replace, and respawn assets from an install the operator owns. That is the access. It is not an administrator login on the machine.
 
-Albion Native needs the same loop on Fable 2, then on the engine.
+## Seat
 
-## Tools the runtime must expose
-
-| Tool | Does | GTA demo equivalent |
+| Power | Allowed | Refused |
 |---|---|---|
-| `list_region` | Names the loaded street, exits, and prop counts. | Map explorer |
-| `spawn_prop` | Places one record from the local dump by id. | Build a landmark |
-| `move_prop` | Moves or deletes that placement. | Edit the scene |
-| `trace_path` | Reads or writes a road or NPC path. | Traffic nodes |
-| `shot` | Returns a frame of the current view. | Visual check |
+| Read the dump | Through `FABLE2_DUMP` only | Any other disk path |
+| Remake an asset | Write a derived mesh, texture, or clip into the local generated directory | Commit the dump, the derived file, or a ripped original |
+| Replace in the scene | `spawn_prop`, `move_prop`, delete that placement | Edit unrelated project files mid-prompt |
+| See the result | `shot` of the current view | A hidden channel outside the repository |
+| Paths | `trace_path` on the loaded region | Traffic data from another game |
 
-The asset manager is the browser behind `spawn_prop`. Until that tool is added, the converter is the browser. No tool accepts a path. The dump variable is already set.
+Remake means derive. A model becomes a GLB. A texture becomes an engine image. The original archive stays in the dump. The agent does not get root, a shell outside the tool list, or the right to publish the result.
 
-## Session rule
+## Tools
 
-The player, or a model the player assigned, types a short brief. The runtime runs one tool, then shows the shot. It does not rewrite the engine mid-prompt. A quest, a combat number, or a new region is still a chunk in `docs/SYSTEMS.md`, not a side effect of a prompt.
+| Tool | Does |
+|---|---|
+| `list_region` | Loaded street, exits, prop counts. |
+| `list_assets` | Records in the dump the manager can see. |
+| `remake` | Convert one named record into the local generated directory. |
+| `spawn_prop` | Place that derived record. |
+| `move_prop` | Move or delete that placement. |
+| `trace_path` | Read or write a road or NPC path. |
+| `shot` | Return the current frame. |
 
-## Doable
+One prompt, one tool, then a shot. A quest or a combat number is still a chunk in `docs/SYSTEMS.md`.
 
-Yes, once a street renders. The first proof is `spawn_prop` of one converted model and `shot` of that frame. Map explore and path edit come after the heightfield exists. This does not require the San Andreas repositories, and it does not ship their assets.
+## Proof
+
+The first proof is `remake` on one non-foliage model, `spawn_prop`, and `shot`. If the dump variable is unset, the seat stops and writes `BLOCKED`.
