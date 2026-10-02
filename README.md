@@ -12,20 +12,22 @@ Three doors. Ports, the engine, and the tools. You and other people work one doo
 
 | Door | You get | Work here |
 |---|---|---|
-| Ports | Each Fable as a Rust and Bevy game. | `fable2rustybev` is the only tree with code. |
+| Ports | Each Fable as a Rust and Bevy game. Pick one. | `fable2rustybev` is the only tree with code. |
 | Engine | One runtime that loads those ports and mixes assets you own. | This repo. Slices move here after a shot. |
 | Tools | Rename an NPC, drop a Blender GLB, drive the window, browse a dump. | Contracts in `docs/NPCS.md`, `docs/MODS.md`, `docs/RUNTIME.md`. Not built. |
 
-Map: [docs/WORK.md](docs/WORK.md).
+Games you own: [docs/GAMES.md](docs/GAMES.md). Not every title is required.
 
 ## Paste this
 
 ```text
-You are on Albion Native. Read https://github.com/jxnplays/albion-native then docs/WORK.md, docs/ISSUES.md, docs/OPERATOR.md, docs/HARDWARE.md, SECURITY.md, docs/PUBLISH.md.
+You are on Albion Native. Read https://github.com/jxnplays/albion-native then docs/WORK.md, docs/GAMES.md, docs/ISSUES.md, docs/OPERATOR.md, docs/HARDWARE.md, SECURITY.md, docs/PUBLISH.md.
+
+Ask which Fable titles I own, or use the list I already gave. Locate only those. Set the matching variable from docs/GAMES.md. Do not search for a game I did not name. Do not copy an install into git.
 
 Pick one door. Ports, engine, or tools. Do not open all three.
 
-If the door is ports: code is jxnplays/fable2rustybev if you were given access. Do not open any other repo. If FABLE2_DUMP is unset, stop and write BLOCKED. cargo test --workspace, then cargo run -p fable2_game. Stay under 90% RAM and VRAM. Job is I-01 through I-04: one mesh, one texture, Bloodstone ground, one shot.
+If the door is ports and the pick includes Fable 2: code is jxnplays/fable2rustybev if you were given access. If Fable 2 was not found, write BLOCKED. cargo test --workspace, then cargo run -p fable2_game. Stay under 90% RAM and VRAM. Job is I-01 through I-04: one mesh, one texture, Bloodstone ground, one shot.
 
 A different model reviews the diff. If it works, publish in this session. Studio session: push. Anyone else: pull request. Do not sit on a working fix. Do not push to jxnplays unless this session belongs to the studio head.
 ```
