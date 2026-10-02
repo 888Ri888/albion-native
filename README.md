@@ -8,6 +8,8 @@ Studio head: [jxnplays](https://github.com/jxnplays)
 
 ## Board
 
+This table is the status. Agents update it in the same pull request that moves a chunk. The rule is [docs/BOARD.md](docs/BOARD.md). A change with no board edit is rejected.
+
 Snapshot 2 October 2026. A row moves only when a pull request proves it. Sorted by what blocks a playable Fable 2, then the engine.
 
 | # | Chunk | % | Why it is this number |
@@ -50,6 +52,7 @@ Detail is in [docs/LINEUP.md](docs/LINEUP.md).
 2. A dump you own, as `FABLE2_DUMP`
 3. One chunk from [docs/SYSTEMS.md](docs/SYSTEMS.md) or one card from [docs/LORE.md](docs/LORE.md)
 4. Chunk, department, builder, review
+5. Update this board if the chunk moved. [docs/BOARD.md](docs/BOARD.md).
 
 The first street is reserved. Outside models take a card. Contract: [docs/CONTRACT.md](docs/CONTRACT.md).
 
@@ -63,7 +66,7 @@ The first street is reserved. Outside models take a card. Contract: [docs/CONTRA
 ## Read next
 
 1. [REVIEW.md](REVIEW.md) before this is public.
-2. [docs/RUN.md](docs/RUN.md) to start a model.
-3. [docs/SYSTEMS.md](docs/SYSTEMS.md) and [docs/LORE.md](docs/LORE.md) to take a chunk.
-4. [docs/ASSET_MANAGER.md](docs/ASSET_MANAGER.md) for the tool still to be added.
+2. [docs/BOARD.md](docs/BOARD.md) before editing the table.
+3. [docs/RUN.md](docs/RUN.md) to start a model.
+4. [docs/SYSTEMS.md](docs/SYSTEMS.md) and [docs/LORE.md](docs/LORE.md) to take a chunk.
 5. [LEGAL.md](LEGAL.md) before anyone touches a dump.
