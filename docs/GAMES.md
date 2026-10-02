@@ -1,19 +1,26 @@
 # Games
 
-The user picks the titles they own. A model locates only those. Missing titles are skipped, not errors.
+The user picks the titles they own. A model searches the disk for the original files of those titles only. A title they did not name is not searched. A title that is not found is skipped, not a failure, except Fable 2 when that was the pick.
 
-| Pick | Variable | Needs |
+## What to find
+
+| Pick | Variable | Original files |
 |---|---|---|
-| Fable 2 GOTY | `FABLE2_DUMP` | `default.xex` and `data/` |
-| Fable 3 | `FABLE3_DUMP` | The owned install. Not opened as a port yet. |
-| Fable or TLC | `FABLE1_DUMP` | The owned install. Not opened as a port yet. |
-| Anniversary | `FABLE_ANNIVERSARY_DUMP` | Same quests as TLC. Not opened yet. |
-| Legends | `FABLE_LEGENDS_DUMP` | Only if they have a legal source. |
+| Fable 2 GOTY | `FABLE2_DUMP` | `default.xex` (title `4D5307F1`) and a `data/` directory of BNK archives. An extracted dump counts. A disc image alone does not. |
+| Fable 3 | `FABLE3_DUMP` | The owned install: PC `Fable3.exe` plus its data tree, or a 360 extract with `default.xex`. |
+| Fable or TLC | `FABLE1_DUMP` | The owned install. `Fable.exe` or the TLC data tree. |
+| Anniversary | `FABLE_ANNIVERSARY_DUMP` | The owned PC install. Same quests as TLC, later build. |
+| Legends | `FABLE_LEGENDS_DUMP` | Only a legal source they already have. Do not hunt a retail disc. There was not one. |
 
-## Locate
+## Where to look
 
-Ask which titles, or read the list they already gave. Search common install folders for those titles only. Set the variable. Do not scan for a game they did not name.
+For each picked title, search these roots and stop at the first tree that has the files above.
 
-If the pick is Fable 2 and it is not found, write `BLOCKED` and the variable name. If the pick is Fable 3 and Fable 2 is absent, that is fine. Sunday work still needs Fable 2.
+- The variable, if it is already set.
+- Steam `steamapps/common`.
+- Xbox app and extracted-ISO folders the user named.
+- `Games`, `Dumps`, and `ROMs` under the user profile and on secondary drives.
 
-Never copy the install into git. Never locate a title to publish it.
+Do not scan the whole disk if those roots miss. Ask for the folder. Do not copy the install into git. Do not search for a game they did not pick.
+
+Sunday still needs Fable 2. Fable 3 alone is a valid pick for later. It does not unblock the street.
