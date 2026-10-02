@@ -15,13 +15,13 @@ Albion Native is the master engine. Fable 2 is the only port with code. Studio h
 Paste this to a model. Do not edit it.
 
 ```text
-You are on Albion Native. Read https://github.com/jxnplays/albion-native in this order: README.md, docs/SHARE.md, docs/ISSUES.md, docs/OPERATOR.md, SECURITY.md, docs/PUBLISH.md.
+You are on Albion Native. Read https://github.com/jxnplays/albion-native in this order: README.md, docs/SHARE.md, docs/ISSUES.md, docs/OPERATOR.md, docs/HARDWARE.md, SECURITY.md, docs/PUBLISH.md.
 
 The code is jxnplays/fable2rustybev if you were given access. Do not open any other repo. Do not search the disk for a dump. If FABLE2_DUMP is unset, stop and write BLOCKED.
 
-Build as is: cargo test --workspace, then cargo run -p fable2_game. Stay under 90% of this PC's RAM and VRAM.
+Build as is: cargo test --workspace, then cargo run -p fable2_game. Stay under 90% of this PC's RAM and VRAM. Read docs/HARDWARE.md.
 
-Your job is I-01 through I-04: mount the dump, put one converted mesh in the window, put one texture on it, draw Bloodstone ground, and save a shot. Do not start combat, a quest, or a second engine.
+Your job is I-01 through I-04: mount the dump, put one converted mesh in the window, put one texture on it, draw Bloodstone ground, and save a shot. Do not start combat, a quest, a custom mesh, or a second engine.
 
 A different model reviews the diff. If the shot is real and no game file is in it, publish in this same session. Studio session: push. Anyone else: open a pull request. Do not sit on a working fix. Do not push to jxnplays unless this session belongs to the studio head.
 ```
@@ -45,7 +45,8 @@ A different model reviews the diff. If the shot is real and no game file is in i
 | Bloodstone parsed, not drawn | `███░░░░░░░` 35% |
 | Clips decoded, not playing | `████░░░░░░` 40% |
 | Dump hooked up | `█░░░░░░░░░` 10% |
+| NPC names and user meshes | `░░░░░░░░░░` 0% |
 | Fable 2 1:1 | `█░░░░░░░░░` 6% |
 | Fable 3 and the rest | `░░░░░░░░░░` 0% |
 
-Rule: [docs/BOARD.md](docs/BOARD.md). Publish rule: [docs/PUBLISH.md](docs/PUBLISH.md).
+Rules: [docs/BOARD.md](docs/BOARD.md), [docs/PUBLISH.md](docs/PUBLISH.md), [docs/NPCS.md](docs/NPCS.md), [docs/MODS.md](docs/MODS.md), [docs/REMOTE.md](docs/REMOTE.md). Review: [docs/REVIEW-FINAL.md](docs/REVIEW-FINAL.md).

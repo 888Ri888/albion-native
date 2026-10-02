@@ -1,6 +1,8 @@
 # Issues
 
-Proven against `fable2rustybev` on 2 October 2026. A model closes a row only with a pull request. Do not delete a row by rewriting this file.
+Proven against `fable2rustybev` on 2 October 2026. Do not delete a row by rewriting this file.
+
+A row closes when the proof in `docs/PROOF.md` is in the same change. The studio head's session may push that change. Anyone else opens a pull request. See `docs/PUBLISH.md`.
 
 | ID | Sev | Where | Issue |
 |---|---|---|---|
@@ -15,5 +17,6 @@ Proven against `fable2rustybev` on 2 October 2026. A model closes a row only wit
 | I-09 | Med | `docs/findings/*-run.log.err` | Vulkan loader fails to open ReShade, error 1114. Window still opens on the RX 6700 XT. Not a crash. Do not depend on ReShade. |
 | I-10 | Low | Gamepad | Unmapped pad UUID `00000000-0000-0000-0000-000000000000`. Default map is used. |
 | I-11 | High | Progress notes | Any file that says 55% parity is ahead of this list. The board wins. |
+| I-12 | Low | Book | No `LICENSE` file. `LEGAL.md` stands until the studio head picks one. |
 
 Sunday owns I-01 through I-04. I-05 and I-06 do not block one house mesh.
